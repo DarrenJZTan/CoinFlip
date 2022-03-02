@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coin Flip</title>
-
   <!-- Bootstrap Core CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/coinFlip.css" type="text/css" />
 </head>
-
 <body>
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <div class="container">
+    <h1>
+      <img src="./img/CoinFlip.svg" alt="CoinFlip Logo" class="logo">
+      Coin<i>Flip</i>
+    </h1>
+    <div class="row">
+      <div class="col"><img id="heads" src="./img/heads_BW.svg" alt="heads"></div>
+      <div class="col display-4 text-center">OR</div>
+      <div class="col"><img id="tails" src="./img/tails_BW.svg" alt="tails"></div>
+    </div>
+    <div id="resultBox" class="mt-3 p-3">
+      <h2 class="display-4 text-center" id="result">Result</h2>
+    </div>
+  </div>
   <script src="js/coinFlip.js"></script>
 </body>
-
 </html>

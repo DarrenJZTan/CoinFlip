@@ -1,0 +1,14 @@
+h1 {
+  margin: 1rem;
+}
+i {
+  font-weight: lighter;
+}
+.logo {
+  width: 60px;
+}
+
+#resultBox {
+  background-color: #233140;
+  color: white;
+}
